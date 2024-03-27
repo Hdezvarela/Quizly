@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+	--pink-all: #FF77AB;
+	--purple-all: #7361BA;
+	--blue-all: #00DCFB;
+	--green-all: #00D38E;
+	--yellow-all: #FFD250;
+	--orange-all: #FF982A;
+	--white-all: #f4faffff;
+	--dark-50: #f5f6f6;
+	--dark-100: #e5e7e8;
+	--dark-200: #ced1d3;
+	--dark-300: #acafb4;
+	--dark-400: #83888f;
+	--dark-500: #676c73;
+	--dark-600: #585b62;
+	--dark-700: #4b4d53;
+	--dark-800: #424348;
+	--dark-900: #3a3c3f; /*Iconos*/
+	--dark-950: #242528;
+	--dark-999: #08090aff;
+}
+
+/*@media screen and (min-width: 768px){
+	body{
+		display: none;
+	}
+}*/
+
+*{
+	font-family: "Poppins", sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	pointer-events: none;
+	user-select: none;
+}
+
+.colored-toast.swal2-icon-success {
+	background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-error {
+	background-color: #f27474 !important;
+}
+
+.colored-toast .swal2-title {
+	color: white;
+}
+  
+.colored-toast .swal2-close {
+	color: white;
+}
+  
+.colored-toast .swal2-html-container {
+	color: white;
+}
+
+body{
+	background-color: var(--dark-50);
+}
+
+header{
+	width: 100%;
+	height: 45px;
+	background-color: var(--purple-all);
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	margin-bottom: 12px;
+	position: fixed;
+	z-index: 99;
+}
+
+nav._header{
+	width: 90%;
+	height: 45px;
+}
+
+._header ul{
+	list-style: none;
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+}
+
+.li_header, .a_header{
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	color: var(--dark-50);
+	font-weight: 600;
+	font-size: .9em;
+	height: 45px;
+}
+
+.a_header img, .li_header img{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+main{
+	width: 100%;
+	padding-top: 45px;
+}
+
+.noResult{
+	color: var(--dark-300);
+	font-style: italic;
+	font-size: .9em;
+}

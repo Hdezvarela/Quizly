@@ -1,0 +1,30 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+RewriteRule ^404$ pag/error/404.php [L]
+
+#EndPoints
+RewriteRule ^api/users/(\w+)/?$ app/routes/userRoutes.php?id=$1 [L]
+RewriteRule ^api/users$ app/routes/userRoutes.php [L]
+RewriteRule ^api/topics/(\w+)/?$ app/routes/topicRoutes.php?id=$1 [L]
+RewriteRule ^api/topics$ app/routes/topicRoutes.php [L]
+RewriteRule ^api/courses/(\w+)/?$ app/routes/courseRoutes.php?id=$1 [L]
+RewriteRule ^api/courses$ app/routes/courseRoutes.php [L]
+RewriteRule ^api/questions/(\w+)/?$ app/routes/questionRoutes.php?id=$1 [L]
+RewriteRule ^api/questions$ app/routes/questionRoutes.php [L]
+RewriteRule ^sessions$ app/middleware/auth.php [L]
+#Client_Views
+RewriteRule ^clases/(\d+)/tema/(\d+)/pregunta/(\d+)?$ app/views/questions.php?course=$1&topic=$2&question=$3 [L]
+RewriteRule ^clases/(\d+)/tema/(\d+)/?$ app/views/questions.php?course=$1&topic=$2 [L]
+RewriteRule ^clases/(\d+)?$ app/views/topics.php?course=$1 [L]
+RewriteRule ^cuenta$ app/views/account.php [L]
+RewriteRule ^recuperar_contraseña$ app/views/recoverypassword.php [L]
+RewriteRule ^iniciar_sesion$ app/views/signin.php [L]
+RewriteRule ^crear_cuenta$ app/views/signup.php [L]
+RewriteRule ^crear_clase$ app/views/addcourse.php [L]
+RewriteRule ^clases$ app/views/courses.php [L]
+RewriteRule ^$ app/views/index.php [L]
+
+ErrorDocument 404 /404

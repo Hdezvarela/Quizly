@@ -1,0 +1,134 @@
+main{
+	display: grid;
+	justify-items: center;
+}
+
+.panel{
+	background-color: #7f6fc0;
+	width: 100%;
+	display: grid;
+	justify-items: center;
+}
+
+.infPanel{
+	width: 90%;
+	font-size: .87em;
+	color: var(--dark-50);
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.action{
+	background-color: #fff;
+	width: 90%;
+	height: 42px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	font-weight: 600;
+	color: var(--purple-all);
+	border-radius: 6px;
+	margin-bottom: 12px;
+}
+
+section.print{
+	width: 100%;
+	padding-top: 12px;
+	display: grid;
+	justify-items: center;
+}
+
+.unavailable{
+	color: var(--dark-300);
+	font-size: .9em;
+	font-style: italic;
+}
+
+.class{
+	background-color: #e7e9f8;
+	width: 90%;
+	height: 65px;
+	display: grid;
+	grid-template-columns: 15% 55% 15% 15%;
+	border-radius: 8px;
+	border: 1px solid #a29edb;
+	overflow: hidden;
+	margin-bottom: 8px;
+}
+
+.class a{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+.class a img{
+	width: 1.5em;
+}
+
+.name{
+	color: #6c5ba7;
+	width: 100%;
+}
+
+form{
+	background-color: #fff;
+	width: 96%;
+	display: grid;
+	justify-items: center;
+	padding: 0 0 12px 0;
+	overflow: hidden;
+}
+
+p.label{
+	width: 90%;
+	color: var(--dark-700);
+	font-size: .8em;
+	margin-top: 12px;
+	text-align: left;
+}
+
+.inpt{
+	border: 1px solid var(--dark-950);
+	border-radius: 5px;
+	padding-left: 10px;
+	height: 45px;
+	width: 90%;
+}
+
+#textarea{
+	min-height: 45px;
+	max-height: 480px;
+	overflow: visible;
+	resize: none;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+input#send{
+	background-color: var(--purple-all);
+	border: 1px solid #fff;
+	font-weight: 700;
+	margin-top: 25px;
+	color: #fff;
+	width: 93%;
+}
+
+.loader{
+	opacity: 0;
+	color: #fff;
+	margin-top: -25px;
+	width: 4px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+	transform: translateX(-38px);
+	animation: l21 .5s infinite alternate linear;
+}
+  
+@keyframes l21{
+	50%  {box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px}
+	100% {box-shadow: 19px 0 0 0  , 38px 0 0 3px, 57px 0 0 7px}
+}
