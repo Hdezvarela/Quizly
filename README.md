@@ -6,7 +6,7 @@ _Quizly App es una aplicación web para administrar bancos de preguntas y genera
 
 _Utilizamos Mysql como gestor de base de datos, puedes revisar la estructura relacional en el siguiente enlace_
 
-* [Database Quizly App](https://dbdiagram.io/d/App-Quizly-Project-65b766d9ac844320aeecec66) - dbdiagram
+* [Database Quizly App](https://dbdiagram.io/d/Quizly-6605dd08ef1187168797c965) - dbdiagram
 
 ## Construido con 🛠️
 
